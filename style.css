@@ -1,0 +1,259 @@
+/*fonts*/
+@font-face {
+  font-family: Font;
+  src: url(CutiveMono-Regular.ttf);
+}
+@font-face{
+  font-family: parag;
+  src: url(Montserrat-ExtraLight.ttf);
+}
+@font-face{
+  font-family: captions;
+  src: url(Montserrat-ExtraLightItalic.ttf)
+}
+
+body {
+	margin: 0;
+	padding: 0;	
+	background: #FCF8FE;
+	font-family: Font, sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo{
+  float: left;
+  padding: 3px 0;
+  width: 5%
+}
+
+header {
+  background: #F4EAF9;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  word-spacing: 1px;
+}
+
+nav li{
+  display: inline-block;
+  padding-top: 20px;
+  margin-left: 50px;
+  position: relative;
+  
+}
+
+nav a {
+  color: #413E49;
+  text-decoration: none;
+  font-size: 23px;
+  word-spacing: 1px;
+}
+
+nav a:hover {
+  color: #413E49;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #413E49;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+}
+
+h2{
+  text-align: left;
+  color: #413E49;
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+.form-wrapper {
+  border: 1px solid, #DADADA;  
+  width: 100%;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #F2ECF4;
+}
+
+.form-group{
+  display: flex;
+  align-items: center;
+  display: -ms-flexbox;
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+
+.form-control{
+  display: block;
+  height: 25px;
+  width: 40%;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  margin-top: 6px;
+}
+
+.add-area{
+  padding: 3rem;
+  margin-left: 10px;
+}
+
+.form-group label{
+  font-family: Font, sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;  
+}
+
+.form-group button{
+  display: inline-block;
+  font-family: Font, sans-serif;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #DADADA;
+  border: 1px solid transparent;
+}
+
+.form-group input{
+  font-family: Font, sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.form-group input[type=text]{
+  background-color: #F9F8F9;
+  border: 1px solid transparent;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.gallery-container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+/*images in main*/
+.gallery-container img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.gallery-container:hover img{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+/* images in gallery*/
+.container{
+  margin: 0 auto;
+}
+
+.container .gallery a img {
+height: 150px;
+width: 100%;
+float: none;
+border: 5px solid  #FCF8FE;
+-webkit-transition: -webkit-transform .15s ease;
+-moz-transition: -moz-transform .15s ease;
+-o-transition: -o-transform .15s ease;
+-ms-transition: -ms-transform .15s ease;
+transition: transform .15s ease;
+object-fit: cover;
+} 
+
+.container .gallery {
+  width: 20%;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 10px; 
+}
+
+.container .gallery a:hover img {
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-o-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+z-index: 5;
+object-fit: cover;
+}
+
+.clear {
+clear: both;
+float: none;
+width: 100%;
+}
+
+#contenteditable{
+  font-family: captions;
+  font-size: 13px;
+  margin-top: 2px;
+}
+#category-caption{
+  font-family: captions;
+  font-size: 10px;
+  margin-top: 2px;
+  text-align: left;
+}
+ 
+/*categories*/
+.custom-select{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+/*instruction*/
+.card-header{
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;  
+}
+
+.description{
+  margin-left: 5px;
+  font-family: parag;
+  font-size: 14px;
+}
+
+
+
